@@ -5,7 +5,11 @@
     <title>你好，这是主页</title>
 </head>
 <body>
-    <p1>写点什么呢？</p1>
+{% for gallery in gallerys.all %}
+<br>
+{{ gallery.description }}
+    <br>
+{% endfor %}
 
 </body>
 </html>
